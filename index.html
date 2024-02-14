@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+       <div class="Arrow">
+        <img src="Images/Arrow sign.png" alt="Arrow">
+        Back to list   
+    </div> 
+    <div id="plus">
+        <h1>TODAY</h1>
+        <img src="Images/plus sign.png" alt="">
+    </div>
+    <hr>
+    33% complete
+    <div class="page">
+        
+        <circle-page slot="">Meditation</circle-page>
+        <circle-page slot="pick">Pick up Anna</circle-page>
+        <circle-page>Set up meeting with Jay</circle-page>
+        <circle-page>Finish Daily Ui
+        </circle-page>
+        <circle-page>Second edits on article</circle-page>
+        <circle-page>mail Chris</circle-page>
+
+    </div>
+    <h4>Pull from recurring lists</h4>
+        <div class="page-2" >
+        <button-page slot="daily" color = "Red">Daily</button-page>
+        <button-page>Weekly</button-page>
+        <button-page>Monthly</button-page>
+        <button-page>Occassionally</button-page>
+    </div>
+    
+
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="button.js"></script>
+</body>
+</html>
